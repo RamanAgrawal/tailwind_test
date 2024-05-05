@@ -11,7 +11,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="h-24 fixed w-full flexCenter  bg-[#372b70]">
+    <nav className="h-24 fixed w-full flexCenter  bg-[#3b2e74]">
       <div className="container flexBetween">
         <div className="relative h-10 w-40">
           <Image src="/logo-light@2x.png" alt="logo" fill />

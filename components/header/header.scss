@@ -1,0 +1,22 @@
+.header-para {
+  padding: 20px 0px;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 500;
+}
+#header-btn {
+  background-color: #fff;
+  text-decoration: none;
+  color: black;
+  border-radius: 8px;
+  display: block;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet-active {
+  background: white !important;
+}

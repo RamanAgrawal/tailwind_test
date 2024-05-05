@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       {...rest}
-      className={`p-3 px-6 border rounded-full transition-all duration-150 ${
+      className={`p-3 px-6 border-2 rounded-full transition-all duration-150 ${
         transparent
           ? "bg-transparent text-white hover:bg-white hover:text-black"
           : "bg-white"
