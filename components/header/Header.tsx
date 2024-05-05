@@ -14,7 +14,7 @@ import Button from "../Button";
 
 const Header = () => {
   return (
-    <section className=" bg-[#3b2e74] h-lvh -z-10 relative">
+    <section className=" bg-[#3b2e74] h-lvh  relative">
       <div className=" w-full flex flex-wrap-reverse items-center justify-between pt-44 p-3 gap-3  container">
         <div className=" w-full h-full lg:w-1/2 font-semibold">
           <h1 className="text-white text-[45px]">

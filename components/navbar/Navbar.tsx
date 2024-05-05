@@ -2,6 +2,10 @@ import Image from "next/image";
 import React from "react";
 import Button from "../Button";
 import Link from "next/link";
+import DropDown from "../DropDown";
+import { FaFileArrowDown } from "react-icons/fa6";
+import { MdKeyboardArrowDown } from "react-icons/md";
+import DropDown2 from "../DropDown2";
 
 const Navbar = () => {
   const demos = [
@@ -11,32 +15,31 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="h-24 fixed w-full flexCenter  bg-[#3b2e74]">
+    <nav className="h-24 fixed w-full z-50 flexCenter  bg-[#3b2e74]">
       <div className="container flexBetween">
         <div className="relative h-10 w-40">
           <Image src="/logo-light@2x.png" alt="logo" fill />
         </div>
         <div className="flexBetween gap-10">
           <ul className="flexBetween gap-10 font-bold text-white">
-            <li className="relative group">
-              <Link href="#">Demos</Link>
+            <li className=" group hover:text-gray-500 transition-all duration-150">
+              <Link href="#" className="flexCenter">
+                Demos
+                <MdKeyboardArrowDown size={20} />
+              </Link>
 
-              <ul className="absolute h-[80vh] w-lvw -right-[49vw] pt-10 ">
-                <div className="container bg-gray-600 h-full rounded-lg">
-                  <div className="grid grid-cols-6 p-10 gap-4 overflow-hidden ">
-                    {Array.from(Array(18)).map(()=>(
-                    <div className="text-black relative w-full aspect-video h-36  hover:-translate-y-1 transition-all duration-150">
-                      <Image src="/navimage1.jpg" alt="" fill className="rounded-lg" />
-                    </div>
-                    )
-                    )
-                 }
-                  </div>
-                </div>
-              </ul>
+              <DropDown
+                img="/navimage1.jpg"
+                className=""
+              />
             </li>
-            <li className="relative">
-              <Link href="#">Pages</Link>
+            <li className=" group hover:text-gray-500 transition-all duration-150 relative">
+              <Link href="#" className="flexCenter">
+                Pages
+                <MdKeyboardArrowDown size={20} />
+              </Link>
+
+              <DropDown2 className=""/>
             </li>
             <li className="relative">
               <Link href="#">Projects</Link>
@@ -44,8 +47,16 @@ const Navbar = () => {
             <li className="relative">
               <Link href="#">Blogs</Link>
             </li>
-            <li className="relative">
-              <Link href="#">Blocks</Link>
+            <li className=" group hover:text-gray-500 transition-all duration-150">
+              <Link href="#" className="flexCenter">
+                Blocks
+                <MdKeyboardArrowDown size={20} />
+              </Link>
+
+              <DropDown
+                img="https://sandbox-tailwindcss.ibthemespro.com/assets/img/demos/block1.svg"
+                className="transition-all duration-150 hidden group-hover:block"
+              />
             </li>
             <li className="relative">
               <Link href="#">Documentation</Link>
