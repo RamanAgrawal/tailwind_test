@@ -21,7 +21,19 @@ const Navbar = () => {
             <li className="relative group">
               <Link href="#">Demos</Link>
 
-              <div className="absolute invisible translate-y-96 bg-black group-hover:-translate-y-80  group-hover:visible h-lvh -right-[43vw] w-[90vw] container border"></div>
+              <ul className="absolute h-[80vh] w-lvw -right-[49vw] pt-10 ">
+                <div className="container bg-gray-600 h-full rounded-lg">
+                  <div className="grid grid-cols-6 p-10 gap-4 overflow-hidden ">
+                    {Array.from(Array(18)).map(()=>(
+                    <div className="text-black relative w-full aspect-video h-36  hover:-translate-y-1 transition-all duration-150">
+                      <Image src="/navimage1.jpg" alt="" fill className="rounded-lg" />
+                    </div>
+                    )
+                    )
+                 }
+                  </div>
+                </div>
+              </ul>
             </li>
             <li className="relative">
               <Link href="#">Pages</Link>
@@ -43,8 +55,6 @@ const Navbar = () => {
         </div>{" "}
       </div>
     </nav>
-
-
   );
 };
 

@@ -14,7 +14,7 @@ import Button from "../Button";
 
 const Header = () => {
   return (
-    <section className=" bg-[#3b2e74] h-lvh">
+    <section className=" bg-[#3b2e74] h-lvh -z-10 relative">
       <div className=" w-full flex flex-wrap-reverse items-center justify-between pt-44 p-3 gap-3  container">
         <div className=" w-full h-full lg:w-1/2 font-semibold">
           <h1 className="text-white text-[45px]">
@@ -31,7 +31,7 @@ const Header = () => {
         </div>
         <div>
           <Swiper
-            className="h-[40vh] lg:h-[70vh] lg:aspect-square rounded-lg "
+            className="h-[40vh] lg:h-[70vh] lg:aspect-square rounded-lg"
             modules={[Navigation, Pagination]}
             slidesPerView={1}
             loop={true}
@@ -40,7 +40,7 @@ const Header = () => {
           >
             {/* {HeaderData.map((item, i) => ( */}
             <SwiperSlide>
-              <Image src="/header1.jpg" alt="" fill />
+              <Image src="/header1.jpg" alt="" fill  />
             </SwiperSlide>
             <SwiperSlide>
               <Image src="/header2.jpg" alt="" fill />
