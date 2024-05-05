@@ -3,18 +3,18 @@ import React, { FC } from "react";
 type Props = {
   className?: string;
 };
-const DropDown2: FC<Props> = ({ className }) => {
+const DropDown4: FC<Props> = ({ className }) => {
   return (
     <ul
       className={`absolute h-[40vh] w-[12vw] left-0 pt-10 transition-all duration-150 hidden group-hover:block ${className}`}
     >
-      <div className="container bg-white h-full rounded-lg p-8">
+      <div className="container bg-white h-full rounded-lg p-4">
         {Array.from({ length: 5 }).map(() => (
-          <div className="text-gray-700 mb-5">Services</div>
+          <div className="text-gray-700 mb-5">Blog without sidebar</div>
         ))}
       </div>
     </ul>
   );
 };
 
-export default DropDown2;
+export default DropDown4;

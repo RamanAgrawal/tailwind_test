@@ -6,6 +6,8 @@ import DropDown from "../DropDown";
 import { FaFileArrowDown } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import DropDown2 from "../DropDown2";
+import DropDown3 from "../DropDown3";
+import DropDown4 from "../DropDown4";
 
 const Navbar = () => {
   const demos = [
@@ -41,11 +43,21 @@ const Navbar = () => {
 
               <DropDown2 className=""/>
             </li>
-            <li className="relative">
-              <Link href="#">Projects</Link>
+            <li className=" group hover:text-gray-500 transition-all duration-150 relative">
+              <Link href="#" className="flexCenter">
+                Projects
+                <MdKeyboardArrowDown size={20} />
+              </Link>
+
+              <DropDown3 className=""/>
             </li>
-            <li className="relative">
-              <Link href="#">Blogs</Link>
+            <li className=" group hover:text-gray-500 transition-all duration-150 relative">
+              <Link href="#" className="flexCenter">
+                Blogs
+                <MdKeyboardArrowDown size={20} />
+              </Link>
+
+              <DropDown4 className=""/>
             </li>
             <li className=" group hover:text-gray-500 transition-all duration-150">
               <Link href="#" className="flexCenter">
